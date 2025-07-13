@@ -15,7 +15,7 @@
       .container{
         background-color: rgb(72, 15, 126);
         left: 0;
-        top: 0;margin-top: 7px;
+        top: 0;
         position: fixed;
         width: 100%;
         color: aqua;
@@ -44,7 +44,54 @@
         cursor: pointer;
       }
 
-      .content{
+      .main-content{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 25px 50px;
+        gap: 40px;
+      }
+
+      .login{
+        margin-top: 10%;
+        margin-left: 10%;
+        background-color: rgb(61, 202, 202);
+        text-align: center;
+        padding-top: 20px;
+        border-radius: 8px;
+        color: black;
+        width: 400px;
+        box-shadow: 0 0 15px black;
+        cursor: none;
+      }
+
+      .login input{
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .login button {
+         width: 60%;
+         padding:10px;
+         background-color: rgb(216, 25, 25);
+         border: 2px solid black;
+         border-radius: 5px;
+         color: rgb(0, 0, 0);
+         font-weight: bold;
+         cursor: pointer;
+      }
+
+      #singup{
+        background-color: transparent;
+        color: black;
+        font-size: 12px;
+        border: none;
+        padding-top: 5%;
+      }
+
+      .info-box{
         width: 400px;
         height: 500px;
         color: rgb(0, 255, 255);
@@ -60,12 +107,15 @@
         overflow-y: auto;
         box-sizing: border-box;
         cursor: none;
+        border: 2px solid white; 
       }
 
     </style>
   </head>
   <body>
+
     <div class="container">
+
       <div class="logo">ChetBot Ai™</div>
       <div>
         <button>Home</button>
@@ -74,34 +124,55 @@
         <button>About us</button>
       </div>
     </div>
-    <div class="content">
-      <button style="margin-left: 40px; margin-top: 30px;">Learn More</button>
-      <p style="margin-left: 10px;"><b>
-          ✨ AI That Works for You
-          Welcome to a platform powered by intelligent bots designed to simplify
-          your digital life. Our suite of AI assistants covers a wide range of
-          tasks—perfect for creators, professionals, and anyone looking to boost
-          efficiency without sacrificing quality. Whether you're generating
-          detailed Excel reports, crafting professional Word documents, or
-          creating visually stunning images and videos, our bots handle the
-          heavy lifting so you can focus on what matters most. <br>
-          📱 Social media strategist? We've got bots that help you grow your
-          presence on Instagram, YouTube, Threads, Pinterest, and more. They
-          provide smart suggestions, optimize content, and even help gain
-          followers with data-driven strategies tailored to your audience. <br>
-          🎨 Need eye-catching visuals fast? Our creative bots generate graphics
-          and videos in seconds—ideal for websites, marketing campaigns, or
-          social feeds. <br>
-          ⚡ These bots are more than just tools—they’re digital companions that
-          learn with you, offer smart recommendations, and adapt to your
-          workflow. Whether you're a student working on a report or an
-          entrepreneur launching a brand, they’re here to support your goals
-          every step of the way.<br>
-          Explore a world where productivity meets creativity, and AI becomes
-          your everyday ally. Ready to level up your day-to-day tasks
-          effortlessly? <br>
-          Want me to shape this into a sectioned layout or add visuals?<br>
-        </b></p>
-</div>
+
+    <div class="main-content">
+
+      <div class="login">
+        <h2> <u>Login</u> </h2>
+        <form>
+          <input type="text" placeholder="Username" required><br>
+          <input type="password" placeholder="password" required><br>
+          <button type="submit">Login</button>
+        </form>
+        <button id="singup">|| Create New Account ||</button>
+      </div>
+
+      <div class="info-box">
+
+        <button style="margin-left: 40px; margin-top: 30px;">Learn More</button>
+        <p style="margin-left: 10px;"><b>
+            ✨ AI That Works for You
+            Welcome to a platform powered by intelligent bots designed to
+            simplify
+            your digital life. Our suite of AI assistants covers a wide range of
+            tasks—perfect for creators, professionals, and anyone looking to
+            boost
+            efficiency without sacrificing quality. Whether you're generating
+            detailed Excel reports, crafting professional Word documents, or
+            creating visually stunning images and videos, our bots handle the
+            heavy lifting so you can focus on what matters most. <br>
+            📱 Social media strategist? We've got bots that help you grow your
+            presence on Instagram, YouTube, Threads, Pinterest, and more. They
+            provide smart suggestions, optimize content, and even help gain
+            followers with data-driven strategies tailored to your audience.
+            <br>
+            🎨 Need eye-catching visuals fast? Our creative bots generate
+            graphics
+            and videos in seconds—ideal for websites, marketing campaigns, or
+            social feeds. <br>
+            ⚡ These bots are more than just tools—they’re digital companions
+            that
+            learn with you, offer smart recommendations, and adapt to your
+            workflow. Whether you're a student working on a report or an
+            entrepreneur launching a brand, they’re here to support your goals
+            every step of the way.<br>
+            Explore a world where productivity meets creativity, and AI becomes
+            your everyday ally. Ready to level up your day-to-day tasks
+            effortlessly? <br>
+            Want me to shape this into a sectioned layout or add visuals?<br>
+          </b></p>
+      </div>
+    </div>
+
   </body>
 </html>
