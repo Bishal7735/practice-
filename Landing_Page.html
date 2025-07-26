@@ -8,12 +8,12 @@
         margin: 0;
         margin-top:60px;
         padding: 0;
-        background-color: rgb(99, 9, 9);
-        height: 300%;
+        background: linear-gradient(to bottom, #DED1C6,#A77693,#174871,#0F2D4D);
+        height: 90%;
       }
 
       .container{
-        background-color: rgb(72, 15, 126);
+        background: linear-gradient(#A77693,#174871);
         left: 0;
         top: 0;
         position: fixed;
@@ -33,7 +33,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
-      button {
+      .nav{
         background-color: aqua;
         border: none;
         padding: 10px 15px;
@@ -42,6 +42,7 @@
         border-radius: 8px;
         font-weight: bold;
         cursor: pointer;
+        box-shadow: 0 0 10px black;
       }
 
       .main-content{
@@ -70,6 +71,7 @@
         margin: 10px 0;
         border: none;
         border-radius: 5px;
+        box-shadow: 0 0 5px black;
       }
 
       .login button {
@@ -91,37 +93,17 @@
         padding-top: 5%;
       }
 
-      .info-box{
-        width: 400px;
-        height: 500px;
-        color: rgb(0, 255, 255);
-        background-image: 
-        url(https://static.vecteezy.com/system/resources/thumbnails/022/850/693/small_2x/concept-of-people-technology-ai-or-intelligence-artificial-background-businessman-with-ai-learning-and-artificial-intelligence-technology-ai-artificial-intelligence-photo.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: scroll;
-        position: fixed;
-        margin-top: 4%;
-        margin-left: 68%;
-        overflow-y: auto;
-        box-sizing: border-box;
-        cursor: none;
-        border: 2px solid white; 
-      }
-
     </style>
   </head>
   <body>
 
     <div class="container">
-
       <div class="logo">ChetBot Ai™</div>
       <div>
-        <button>Home</button>
-        <button>Bots</button>
-        <button>Settings</button>
-        <button>About us</button>
+        <button class="nav">Home</button>
+        <button class="nav">Bots</button>
+        <button class="nav">Settings</button>
+        <button class="nav">About us</button>
       </div>
     </div>
 
@@ -135,42 +117,6 @@
           <button type="submit">Login</button>
         </form>
         <button id="singup">|| Create New Account ||</button>
-      </div>
-
-      <div class="info-box">
-
-        <button style="margin-left: 40px; margin-top: 30px;">Learn More</button>
-        <p style="margin-left: 10px;"><b>
-            ✨ AI That Works for You
-            Welcome to a platform powered by intelligent bots designed to
-            simplify
-            your digital life. Our suite of AI assistants covers a wide range of
-            tasks—perfect for creators, professionals, and anyone looking to
-            boost
-            efficiency without sacrificing quality. Whether you're generating
-            detailed Excel reports, crafting professional Word documents, or
-            creating visually stunning images and videos, our bots handle the
-            heavy lifting so you can focus on what matters most. <br>
-            📱 Social media strategist? We've got bots that help you grow your
-            presence on Instagram, YouTube, Threads, Pinterest, and more. They
-            provide smart suggestions, optimize content, and even help gain
-            followers with data-driven strategies tailored to your audience.
-            <br>
-            🎨 Need eye-catching visuals fast? Our creative bots generate
-            graphics
-            and videos in seconds—ideal for websites, marketing campaigns, or
-            social feeds. <br>
-            ⚡ These bots are more than just tools—they’re digital companions
-            that
-            learn with you, offer smart recommendations, and adapt to your
-            workflow. Whether you're a student working on a report or an
-            entrepreneur launching a brand, they’re here to support your goals
-            every step of the way.<br>
-            Explore a world where productivity meets creativity, and AI becomes
-            your everyday ally. Ready to level up your day-to-day tasks
-            effortlessly? <br>
-            Want me to shape this into a sectioned layout or add visuals?<br>
-          </b></p>
       </div>
     </div>
 
